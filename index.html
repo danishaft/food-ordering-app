@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Resturant App</title>
+</head>
+<body>
+    <main id="main-container">
+        <section id="landing-page">
+            <h2 id="heading">Jimmy’s Diner</h2>
+            <p id="landing-text">The best burgers and pizzas in town.</p>
+        </section>
+        <section id="available-food">
+           <!--render the menu from js here-->
+        </section>
+        <div id="order-container">
+            <!--render the order details from js-->
+        </div>
+    </main>
+    <div class="modal hidden" id="modal">
+        <h4>Enter card details</h4>
+        <form action="" id="payment-form">
+            <input name="name" id="name" placeholder="Enter your name" aria-label="Enter your name" required>
+            <input name="card-number" id="card-number" placeholder="Enter card number" aria-label="Enter card number" required>
+            <input name="cvv-number" id="cvv-number" placeholder="Enter CVV" aria-label="Enter CVV" required>
+        </form>
+        <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
